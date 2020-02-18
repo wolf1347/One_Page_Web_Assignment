@@ -32,65 +32,81 @@
 		<!-- Gallery -->
 		<section>
 			<div id="pics">
-				<h1>The Animals</h1>
-				<div>
 				
-					<!-- Photo Container 1 -->
-					<div class="container">
-						<div>
-							<img src="./images/thumb/thumbnail_1.png" alt="Deku the Finnish Spitz">
-							<div>
-								<p>Deku the Finnish Spitz</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Photo Container 1 -->
-					
-					<!-- Photo Container 2 -->
-					<div>
-						<div class="container">
-						<img src="./images/thumb/thumbnail_2.png" alt="Jazz the Maine Coon Mix">
-							<div>
-								<p>Jazz the Maine Coon Mix</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Photo Container 2 -->
-					
-					<!-- Photo Container 3 -->
-					<div>
-						<div class="container">
-						<img src="./images/thumb/thumbnail_3.png" alt="Leo the Domestic short hair">
-							<div>
-								<p>Leo the Domestic short hair</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Photo Container 3 -->
-					
-					<!-- Photo Container 4 -->
-					<div>
-						<div class="container">
-						<img src="./images/thumb/thumbnail_4.png" alt="Sweet Pea the Domestic short hair">
-							<div>
-								<p>Sweet Pea the Domestic short hair</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Photo Container 4 -->
-					
-					<!-- Photo Container 5 -->
-					<div>
-						<div class="container">
-						<img src="./images/thumb/thumbnail_5.png" alt="Trixie the Domestic short hair (She is also a piebald or bicolor)">
-							<div>
-								<p>Trixie the Domestic short hair (She is also a piebald or bicolor)</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Photo Container 5 -->					
+				<h2 style="text-align:center">Pictures of the pack</h2>
+
+				<div class="row">
+				  <div class="column">
+					<img src="images/thumb/thumbnail_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				  </div>
+				  <div class="column">
+					<img src="images/thumb/thumbnail_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				  </div>
+				  <div class="column">
+					<img src="images/thumb/thumbnail_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				  </div>
+				  <div class="column">
+					<img src="images/thumb/thumbnail_4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+				  </div>
+				  <div class="column">
+					<img src="images/thumb/thumbnail_5.png" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+				  </div>
 				</div>
-			</div>
+				
+				<div id="myModal" class="modal">
+				  <span class="close cursor" onclick="closeModal()">&times;</span>
+				  <div class="modal-content">
+				
+					<div class="mySlides">
+					  <div class="numbertext">1 / 5</div>
+					  <img src="images/thumb/thumbnail_1small.jpg" style="width:100%">
+					</div>
+				
+					<div class="mySlides">
+					  <div class="numbertext">2 / 5</div>
+					  <img src="images/thumb/thumbnail_2small.jpg" style="width:100%">
+					</div>
+				
+					<div class="mySlides">
+					  <div class="numbertext">3 / 5</div>
+					  <img src="images/thumb/thumbnail_3small.jpg" style="width:100%">
+					</div>
+					
+					<div class="mySlides">
+					  <div class="numbertext">4 / 5</div>
+					  <img src="images/thumb/thumbnail_4small.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">5 / 5</div>
+						<img src="images/thumb/thumbnail_5small.jpg" style="width:100%">
+					  </div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+					<div class="caption-container">
+					  <p id="caption"></p>
+					</div>
+				
+				
+					<div class="column">
+					  <img class="demo cursor" src="images/thumb/thumbnail_1.png" style="width:100%" onclick="currentSlide(1)" alt="Deku, the Finnish Spitz">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="images/thumb/thumbnail_2.png" style="width:100%" onclick="currentSlide(2)" alt="Jazz, the Maine Coon">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="images/thumb/thumbnail_3.png" style="width:100%" onclick="currentSlide(3)" alt="Leo, the domestic short hair">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="images/thumb/thumbnail_4.png" style="width:100%" onclick="currentSlide(4)" alt="Sweet Pea, the domestic short hair">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="images/thumb/thumbnail_5.png" style="width:100%" onclick="currentSlide(4)" alt="Trixie, the domestic short">
+					</div>
+				  </div>
+				</div>
 		</section>
 			<br>
 		<!-- End Gallery -->
@@ -164,5 +180,7 @@
 			www.packofwolves.pets &nbsp;|&nbsp; &copy; 2020
 		</div>
 		<!-- End Footer -->	
+
+		<script src="JS/one_page_website.js"></script>
 	</body>
 </html>
